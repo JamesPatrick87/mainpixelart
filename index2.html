@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixel Art Maker!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative">
+    <link rel="stylesheet" href="styles2.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+		<div class="row">
+			<div class="col-lg-12" >
+				<div id="titleContent">
+					<h1>Pixel Art Maker</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" id="gridFormContent">
+		<div class="row">
+			<div class="col-12">
+				<h2>Choose Grid Size</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12"  >
+				<form id="sizePicker">
+				  <div class="form-row align-items-center">
+					<label class="col-md-2 my-1" for="inputHeight">Grid Height:</label>
+						<div class="col-md-3 my-1">
+						 <input type="number" class="form-control" id="inputHeight" name="height" min="1" max="100" value="30">
+						</div>
+
+					<label class="col-md-2 my-1" for="inputWeight">Grid Width:</label>
+						<div class="col-md-3 my-1">
+						  <input type="number" class="form-control" id="inputWeight" name="width" min="1" max="100" value="30">
+						</div>
+            <br>
+						<button type="submit" class="btn btn-primary col-md-2 my-2" id="submit">Submit</button>
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+  <h2>Choose Color</h2>
+  <div class="container">
+		<div class="row">
+			<div class="col-12">
+					<input type="color" id="colorPicker" value="#979797">
+          <br>
+          <h2>Options</h2>
+					<button type="button" class="btn btn-primary " id="eraser" >Erase</button>
+					<button type="button" class="btn btn-primary " id="reset" >Reset</button>
+			</div>
+		</div>
+	</div>
+    <h2>Design Canvas</h2>
+	<table id="pixelCanvas"></table>
+	<script src="designs2.js"></script>
+</body>
+</html>

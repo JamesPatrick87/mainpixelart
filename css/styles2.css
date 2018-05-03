@@ -1,0 +1,133 @@
+html {
+	height: 100%;
+	font-size: 1rem;
+}
+body {
+    text-align: center;
+		background: linear-gradient(to bottom right, #990000, #ffffff);
+		height: 100%;
+		margin: 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 100px;
+    margin: 0.1em;
+		text-align: center;
+}
+
+h2 {
+    margin: 1em 0 0.25em;
+	font-size: 1.5rem;
+}
+
+h2:first-of-type {
+    margin-top: 0.5em;
+}
+
+table,
+tr,
+td {
+    border: 1px solid #000;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+tr {
+    height: 20px;
+}
+
+td {
+    width: 20px;
+	background-color: #FFFFFF;
+}
+input[type=number] {
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out;
+}
+input[type=number]:focus {
+	width: 10%;
+}
+input[type=color]{
+	width: 100px;
+	height: 50px;
+	border: none;
+	border-radius: 40px;
+	background: none;
+	outline: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: solid 2px #000;
+	border-radius: 10px;
+}
+
+label {
+	font-size: 1.2rem;
+}
+button {
+	border: none;
+	border-radius: 10px;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+#eraser {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	outline: none;
+}
+#eraser:hover {
+	background-color: #f44336;
+	color: white;
+}
+#reset {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	outline: none;
+}
+#reset:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+#submit {
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	outline: none;
+}
+#submit:hover {
+	background-color: #555555;
+	color: white;
+}
+#pixelCanvas {
+	cursor:cell;
+}
+
+#titleContent {
+	padding-top: 2.5%;
+}
+
+#gridFormContent {
+
+}
+
+#navToolBar {
+	width: 60%;
+}
